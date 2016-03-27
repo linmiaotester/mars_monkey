@@ -12,8 +12,8 @@ isCommandInPath() {
 
 if [[ `isCommandInPath adb ` = "false" || `isCommandInPath aapt ` = "false" ]]
 then
-	echo "check android idk in ur PATH environment :$PATH"
-	#exit 1
+	echo "check android sdk in ur PATH environment :$PATH"
+	exit 1
 fi
 
 for i in $@
