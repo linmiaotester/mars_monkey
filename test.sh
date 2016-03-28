@@ -1,4 +1,6 @@
 #!/bin/sh
+source /etc/profile
+
 isCommandInPath() {
 	which $1 &> /dev/null
 	if [ $? -ne 0 ]
